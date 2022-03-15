@@ -14,7 +14,7 @@ public class MonsterSpawner : MonoBehaviour
 
     void Awake()
     {
-        
+        Invoke(nameof(SpawnMonster), 2);
     }
 
 
@@ -30,6 +30,13 @@ public class MonsterSpawner : MonoBehaviour
 
         spawnedMonster = Instantiate(selectedPrefab, position, Quaternion.identity);
 
-        FindObjectOfType<ARPlaneManager>().subsystem
+        FindObjectOfType<ARPlaneManager>().subsystem.Stop();
+        spawnAudioSource.Play();
+    }
+
+    private static void MonsterCapture()
+    {
+        spawnedMonster = null;
+        FindObjectOfType<ARPlaneManager>().subsystem.Start();
     }
 }
