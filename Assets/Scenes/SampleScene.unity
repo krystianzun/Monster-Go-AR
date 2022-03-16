@@ -589,6 +589,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ee39dc029bccdc4ba69dc8af22ab892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocityFactor: 0.001
+  angleCorrection: 30
+  ballPrefab: {fileID: 978652053643338961, guid: 35bd8dbe4d8319d43ae340dc2b9611a0, type: 3}
+  cameraTransform: {fileID: 126844683}
+  throwAudioSource: {fileID: 1118356385}
 --- !u!1 &1647943325
 GameObject:
   m_ObjectHideFlags: 0
