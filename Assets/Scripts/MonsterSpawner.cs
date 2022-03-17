@@ -34,7 +34,7 @@ public class MonsterSpawner : MonoBehaviour
         spawnAudioSource.Play();
     }
 
-    private static void MonsterCapture()
+    public static void MonsterCapture()
     {
         spawnedMonster = null;
         FindObjectOfType<ARPlaneManager>().subsystem.Start();

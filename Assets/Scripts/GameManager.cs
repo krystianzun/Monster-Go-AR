@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     private float startSwipeTime;
     private bool ballThrowingDisable;
 
+    public RectTransform capturedMonsterHolder;
+    public CapturedMonsterUI capturedMonsterUIPreFab;
 
     void Start()
     {
@@ -69,5 +71,12 @@ public class GameManager : MonoBehaviour
     public void BallDestroyed()
     {
         ballThrowingDisable = false;
+    }
+
+    public void MonsterCaptured(Monster monster)
+    {
+        MonsterSpawner.MonsterCapture();
+        var newUIEntry = Instantiate(capturedMonsterUIPreFab, capturedMonsterHolder);
+        newUIEntry.SetUp(monster.portraitSprite);
     }
 }
