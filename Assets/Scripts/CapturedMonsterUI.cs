@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class CapturedMonsterUI : MonoBehaviour
 {
     public Image portraitImage;
-    public void SetUp(Sprite sprite)
+
+    public void SetUp(Sprite portraitSprite)
     {
-        portraitImage.sprite = sprite;
+        portraitImage.sprite = portraitSprite;
     }
 }

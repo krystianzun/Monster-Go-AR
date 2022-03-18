@@ -79,4 +79,12 @@ public class GameManager : MonoBehaviour
         var newUIEntry = Instantiate(capturedMonsterUIPreFab, capturedMonsterHolder);
         newUIEntry.SetUp(monster.portraitSprite);
     }
+
+    private void Awake()
+    {
+        foreach (Transform child in capturedMonsterHolder.transform)
+        {
+            Destroy(child.gameObject);
+        }
+    }
 }
