@@ -64,8 +64,9 @@ public class GameManager : MonoBehaviour
 
         ballRigidBody.velocity = direction * velocity * velocityFactor;
 
-        ballThrowingDisable = true;
         throwAudioSource.Play();
+
+        ballThrowingDisable = true;
     }
 
     public void BallDestroyed()

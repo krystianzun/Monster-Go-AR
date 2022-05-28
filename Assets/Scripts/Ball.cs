@@ -16,8 +16,11 @@ public class Ball : MonoBehaviour
         {
             return;
         }
-        hitAudioSource.Play();
+       
         animator.SetTrigger("Capturing");
+
+        hitAudioSource.Play();
+
         enabled = false;
 
         rd.useGravity = false;
