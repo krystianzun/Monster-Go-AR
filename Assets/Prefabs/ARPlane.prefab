@@ -83,8 +83,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   availableMonsterPrefab:
   - {fileID: 1165068872854248848, guid: c73ae6621f8832748a78dfb8aec6dd12, type: 3}
-  - {fileID: 3603837424249809003, guid: 128a80094e00bf34fa2555766a7eea0e, type: 3}
-  - {fileID: 4935060738633626477, guid: 312b31977ed9b2d48a14849ebb8c7fb3, type: 3}
+  - {fileID: 1165068872854248848, guid: c73ae6621f8832748a78dfb8aec6dd12, type: 3}
+  - {fileID: 1165068872854248848, guid: c73ae6621f8832748a78dfb8aec6dd12, type: 3}
   meshFilter: {fileID: 3884470053761678338}
   spawnAudioSource: {fileID: 1388106109369970754}
 --- !u!82 &1388106109369970754
